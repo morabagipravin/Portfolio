@@ -1,6 +1,7 @@
 import PortfolioImg from "../assets/portfolio.jpeg";
 import SuicidePrevention from "../assets/SuicidePrevention.jpeg";
 import ToDoMaster from "../assets/ToDoMaster.jpeg";
+import TextNova from "../assets/TextNova.jpeg";
 
 const projectsData = [
   {
@@ -26,6 +27,15 @@ const projectsData = [
     techStack: ["JavaScript", "React", "CSS", "GSAP", "Docker"],
     image: ToDoMaster,
     github: "https://github.com/morabagipravin/To-Do-Master",
+    website: "",
+  },
+  {
+    id: 3,
+    name: "Text Nova",
+    description: "A website offering various text-based tools and utilities.",
+    techStack: ["HTML", "CSS", "JavaScript", "React", "Bootstrap5"],
+    image: TextNova,
+    github: "https://github.com/morabagipravin/TextNova",
     website: "",
   },
 ];
