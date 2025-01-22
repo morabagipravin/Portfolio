@@ -1,4 +1,3 @@
-import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -40,7 +39,7 @@ const Home = () => {
           </div>
           <div className="sub-title">
             <p>
-              Hi, I'm Pravin Morabagi. A dedicated frontend professional exploring
+              Hi, I&apos;m Pravin Morabagi. A dedicated frontend professional exploring
               backend technologies to build robust, full-stack websites.
             </p>
           </div>

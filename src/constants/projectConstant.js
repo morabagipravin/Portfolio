@@ -2,6 +2,7 @@ import SuicidePreventionImage from "../assets/SuicidePrevention.jpeg";
 import ToDoMasterImage from "../assets/ToDoMaster.jpeg";
 import TextNovaImage from "../assets/TextNova.jpeg";
 import RiskyRollImage from "../assets/RiskyRoll.jpeg";
+import ForecastProImage from "../assets/ForecastPro.jpeg";
 
 const projectsData = [
   {
@@ -45,6 +46,15 @@ const projectsData = [
     techStack: ["HTML", "CSS", "JavaScript"],
     image: RiskyRollImage,
     github: "https://github.com/morabagipravin/Risky-Roll",
+    website: "",
+  },
+  {
+    id: 5,
+    name: "ForecastPro",
+    description: "Developed a modern weather application using React and Tailwind CSS, offering real-time weather updates, detailed forecasts, and essential weather metrics with OpenWeather API.",
+    techStack: ["HTML", "CSS","React", "Tailwind CSS", "OpenWeather API"],
+    image: ForecastProImage,
+    github: "https://github.com/morabagipravin/ForecastPro",
     website: "",
 },
 
