@@ -35,17 +35,17 @@ const Contact = () => {
             setTimeout(() => {
               setEmailSent(false);
             }, 10000);
-          } else {
-            alert("Failed to send Email!");
+            setName("");
+            setEmail("");
+            setMessage("");
           }
-          setName("");
-          setEmail("");
-          setMessage("");
-          console.log("response", response);
         })
-        .then((error) => console.log(error));
+        .catch((error) => {
+          console.error("Failed to send email:", error);
+          alert("Failed to send message. Please try again later.");
+        });
     } else {
-      alert("Please fill in all fields.");
+      alert("Please fill in all required fields.");
     }
   };
 
@@ -68,7 +68,6 @@ const Contact = () => {
             <h2>
               <WavingHandIcon className="hello-icon" /> Hi There,
             </h2>
-            {/* <h2>Let's code your vision together.</h2> */}
           </div>
           <div className="left-email">
             <EmailIcon sx={{ fontSize: "2.5em" }} className="email-icon" />
@@ -83,19 +82,19 @@ const Contact = () => {
             <p>Socials : </p>
             <a
               href="https://www.linkedin.com/in/pravin-morabagi/"
-              aria-label="github profile"
+              aria-label="LinkedIn profile"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Linkedin
+              LinkedIn
             </a>
             <a
               href="https://github.com/morabagipravin"
-              aria-label="github profile"
+              aria-label="GitHub profile"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github
+              GitHub
             </a>
           </div>
         </motion.div>
@@ -111,12 +110,10 @@ const Contact = () => {
           </div>
           <form onSubmit={submitForm}>
             <div className="name-group input-group">
-              <label name="name" id="name">
-                Full Name
-              </label>
-              <br />
+              <label htmlFor="name">Full Name</label>
               <input
                 type="text"
+                id="name"
                 name="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -124,27 +121,21 @@ const Contact = () => {
               />
             </div>
             <div className="email-group input-group">
-              <label name="email" id="email">
-                Email Address
-              </label>
-              <br />
+              <label htmlFor="email">Email Address</label>
               <input
                 type="email"
+                id="email"
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                id="email"
                 required
               />
             </div>
             <div className="message-group input-group">
-              <label name="message" id="message">
-                Message
-              </label>
-              <br />
+              <label htmlFor="message">Message</label>
               <textarea
-                name="message"
                 id="message"
+                name="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 rows="4"
@@ -156,8 +147,8 @@ const Contact = () => {
               disabled={emailSent}
               className="primary-button send-btn"
             >
-              {emailSent ? "Sent!" : "Send"}{" "}
-              {emailSent ? "" : <SendIcon className="send-icon" />}
+              {emailSent ? "Sent!" : "Send"}
+              {!emailSent && <SendIcon className="send-icon" />}
             </button>
           </form>
         </motion.div>
@@ -174,7 +165,7 @@ const Contact = () => {
         </motion.div>
       )}
       <span className="copyright">
-        <i>&#169; 2024 | All rights reserved. Made by Pravin Sukhadev Morabagi</i>
+        <i>© 2024 | All rights reserved. Made by Pravin Sukhadev Morabagi</i>
       </span>
     </div>
   );
