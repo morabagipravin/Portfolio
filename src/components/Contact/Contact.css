@@ -237,7 +237,66 @@
     width: 100%;
     padding: 20px;
   }
-  .send-btn {
-    padding: 8px 25px;
-  }
+  /* Existing unchanged styles above */
+
+.send-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 45px;
+  border-radius: 6px;
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  margin: 10px 0px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.send-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.send-btn:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.send-btn:not(:disabled):active {
+  transform: translateY(0);
+}
+
+.send-btn .send-icon {
+  transition: all 0.5s;
+  width: 18px;
+}
+
+.send-btn:hover .send-icon {
+  color: var(--primary-color);
+  transform: translateX(2px);
+}
+
+/* Add a subtle shine effect on hover */
+.send-btn:after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  transition: all 0.5s;
+  pointer-events: none;
+}
+
+.send-btn:hover:after {
+  left: 150%;
+}
 }

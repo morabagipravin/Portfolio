@@ -1,7 +1,7 @@
 import ReactIcon from "../assets/React.svg";
 import JavaScriptIcon from "../assets/JavaScript.svg";
-import HTMLIcon from "../assets/HTML5.svg";
-import CSSIcon from "../assets/CSS3.svg";
+// import HTMLIcon from "../assets/HTML5.svg";
+// import CSSIcon from "../assets/CSS3.svg";
 import BootstrapIcon from "../assets/Bootstrap.svg";
 import TailwindIcon from "../assets/Tailwind CSS.svg";
 import ExpressIcon from "../assets/Express.svg";
