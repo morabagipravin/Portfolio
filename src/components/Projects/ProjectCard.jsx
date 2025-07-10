@@ -42,14 +42,14 @@ const ProjectCard = ({ item }) => {
             >
               <CodeIcon className="code-icon" />
             </a>
-            <a
+            {/* <a
               href={item.website}
               target="_blank"
               rel="noopener noreferrer"
               className="view-btn"
             >
               <LanguageIcon className="live-icon" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

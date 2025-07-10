@@ -1,9 +1,9 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import PersonIcon from "@mui/icons-material/Person";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import PermPhoneMsgIcon from "@mui/icons-material/PermPhoneMsg";
-import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+// import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import "./Navbar.css";
 
