@@ -35,7 +35,7 @@ if (savedColors) {
 const App = () => {
   return (
     <div className="app" id="app">
-      <Customise />
+      {/* <Customise /> */}
       <Navbar />
       <Home />
       <Skills />

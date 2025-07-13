@@ -38,12 +38,12 @@ const skills = [
     type: "JavaScript Library",
     image: ReactIcon,
   },
-  {
-    id: 4,
-    name: "Next.js",
-    type: "React Framework",
-    image: NextJsIcon,
-  },
+  // {
+  //   id: 4,
+  //   name: "Next.js",
+  //   type: "React Framework",
+  //   image: NextJsIcon,
+  // },
 
   // Styling and CSS Frameworks
   {
@@ -72,12 +72,12 @@ const skills = [
     type: "Web Framework",
     image: ExpressIcon,
   },
-  {
-    id: 9,
-    name: "Sequelize",
-    type: "ORM",
-    image: SequelizeIcon, // Make sure you have this icon
-  },
+  // {
+  //   id: 9,
+  //   name: "Sequelize",
+  //   type: "ORM",
+  //   image: SequelizeIcon, // Make sure you have this icon
+  // },
   // {
   //   id: 10,
   //   name: "PostgreSQL",
