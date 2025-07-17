@@ -1,7 +1,7 @@
 import SuicidePreventionImage from "../assets/SuicidePrevention.jpeg";
-import ToDoMasterImage from "../assets/ToDoMaster.jpeg";
+// import ToDoMasterImage from "../assets/ToDoMaster.jpeg";
 import TextNovaImage from "../assets/TextNova.jpeg";
-import RiskyRollImage from "../assets/RiskyRoll.jpeg";
+// import RiskyRollImage from "../assets/RiskyRoll.jpeg";
 import ForecastProImage from "../assets/ForecastPro.jpeg";
 import CodeInsightImage from "../assets/CodeInsight.png";
 

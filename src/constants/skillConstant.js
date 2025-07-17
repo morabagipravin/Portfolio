@@ -13,7 +13,7 @@ import NextJsIcon from "../assets/Next.js.svg";
 import NodeJsIcon from "../assets/Node.js.svg";
 // import JWTIcon from "../assets/JWT.png";
 // import PostgreSQLIcon from "../assets/postgresql.svg";
-import SequelizeIcon from "../assets/Sequelize.svg";
+// import SequelizeIcon from "../assets/Sequelize.svg";
 
 
 const skills = [
@@ -38,12 +38,12 @@ const skills = [
     type: "JavaScript Library",
     image: ReactIcon,
   },
-  // {
-  //   id: 4,
-  //   name: "Next.js",
-  //   type: "React Framework",
-  //   image: NextJsIcon,
-  // },
+  {
+    id: 4,
+    name: "Next.js",
+    type: "React Framework",
+    image: NextJsIcon,
+  },
 
   // Styling and CSS Frameworks
   {
