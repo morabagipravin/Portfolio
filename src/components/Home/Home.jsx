@@ -39,8 +39,9 @@ const Home = () => {
           </div>
           <div className="sub-title">
             <p>
-              Hi, I&apos;m Pravin Morabagi. A dedicated frontend professional exploring
-              backend technologies to build robust, full-stack websites.
+              Hi, I&apos;m Pravin Morabagi. A dedicated frontend professional
+              exploring backend technologies to build robust, full-stack
+              websites.
             </p>
           </div>
         </div>
@@ -50,7 +51,7 @@ const Home = () => {
           </a>
           <a
             className="secondary-button"
-            href="/Resume_Portfolio.pdf"
+            href="/Pravin_Morabagi.pdf"
             target="_blank"
             aria-label="Resume"
             rel="noopener noreferrer"

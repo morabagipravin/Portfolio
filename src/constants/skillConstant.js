@@ -11,10 +11,10 @@ import GitIcon from "../assets/Git.svg";
 import GitHubIcon from "../assets/GitHub.svg";
 import NextJsIcon from "../assets/Next.js.svg";
 import NodeJsIcon from "../assets/Node.js.svg";
-// import JWTIcon from "../assets/JWT.png";
+import JWTIcon from "../assets/JWT.svg";
 // import PostgreSQLIcon from "../assets/postgresql.svg";
-// import SequelizeIcon from "../assets/Sequelize.svg";
-
+import AngularIcon from "../assets/AngularIcon.png";
+import MySQLIcon from "../assets/MySQL.svg";  
 
 const skills = [
   // Programming Languages
@@ -45,15 +45,22 @@ const skills = [
     image: NextJsIcon,
   },
 
-  // Styling and CSS Frameworks
   {
     id: 5,
+    name: "Angular",
+    type: "JavaScript Framework",
+    image: AngularIcon,
+  },
+
+  // Styling and CSS Frameworks
+  {
+    id: 6,
     name: "Tailwind CSS",
     type: "CSS Framework",
     image: TailwindIcon,
   },
   {
-    id: 6,
+    id: 7,
     name: "Bootstrap",
     type: "CSS Framework",
     image: BootstrapIcon,
@@ -61,63 +68,63 @@ const skills = [
 
   // Backend and Databases
   {
-    id: 7,
+    id: 8,
     name: "Node.js",
     type: "JavaScript Runtime",
     image: NodeJsIcon,
   },
   {
-    id: 8,
+    id: 9,
     name: "Express",
     type: "Web Framework",
     image: ExpressIcon,
   },
+  {
+    id: 10,
+    name: "MySQL",
+    type: "Database",
+    image: MySQLIcon,
+  },
   // {
-  //   id: 9,
-  //   name: "Sequelize",
-  //   type: "ORM",
-  //   image: SequelizeIcon, // Make sure you have this icon
-  // },
-  // {
-  //   id: 10,
+  //   id: 11,
   //   name: "PostgreSQL",
   //   type: "Database",
   //   image: PostgreSQLIcon, // Make sure you have this icon
   // },
   {
-    id: 11,
+    id: 12,
     name: "MongoDB",
     type: "Database",
     image: MongoDBIcon,
   },
-  // {
-  //   id: 12,
-  //   name: "JWT (jsonwebtoken)",
-  //   type: "Authentication",
-  //   image: JWTIcon, // Optional: if you have a token icon
-  // },
+  {
+    id: 13,
+    name: "JWT",
+    type: "Authentication",
+    image: JWTIcon,
+  },
 
   // Tools and Version Control
   {
-    id: 13,
+    id: 14,
     name: "Git",
     type: "Version Control",
     image: GitIcon,
   },
   {
-    id: 14,
+    id: 15,
     name: "GitHub",
     type: "Code Hosting Platform",
     image: GitHubIcon,
   },
   // {
-  //   id: 15,
+  //   id: 16,
   //   name: "Nodemon",
   //   type: "Development Tool",
   //   image: NodemonIcon, // Optional: you can use a generic terminal icon
   // },
   // {
-  //   id: 16,
+  //   id: 18,
   //   name: "Dotenv",
   //   type: "Environment Management",
   //   image: DotenvIcon, // Optional: use an env or gear icon
@@ -125,13 +132,13 @@ const skills = [
 
   // Optional fundamentals
   // {
-  //   id: 17,
+  //   id: 19,
   //   name: "HTML",
   //   type: "Markup Language",
   //   image: HTMLIcon,
   // },
   // {
-  //   id: 18,
+  //   id: 20,
   //   name: "CSS",
   //   type: "Styling Language",
   //   image: CSSIcon,
